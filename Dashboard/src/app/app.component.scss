@@ -1,0 +1,46 @@
+.app {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+  }
+  
+  .layout {
+    display: flex;
+    height: 100%;
+  }
+  
+ /* CSS for 1920x1080 resolution */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.left-navigation {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full height */
+  width: 300px; /* Fixed width for left navigation */
+  background-color: #fff;
+  color: grey;
+  padding: 20px;
+  
+ 
+
+  
+}
+
+.right-container {
+  flex: 1; /* Fill the remaining width */
+  height: 100vh;
+  overflow-y: auto; /* Add scroll only to the right container */
+}
+
+.circular-image {
+  width: 34px;
+  height: 36px;
+  border-radius: 50%;
+  padding-left: -27px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+
+  
