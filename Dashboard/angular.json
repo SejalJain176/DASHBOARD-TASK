@@ -99,7 +99,12 @@
               "src/styles.scss",
               "src/app/custom-theme.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/fusioncharts/fusioncharts.js",
+              "node_modules/fusioncharts/themes/fusioncharts.theme.fint.js",
+              "node_modules/fusioncharts/charts/fusioncharts.charts.js"
+            ]
+            
           }
         }
       }

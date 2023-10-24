@@ -34,3 +34,149 @@
     margin-top: 50px;
   }
   
+  .top-section-style{
+    display:flex;
+    width: 100%;
+  }
+
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 23px;
+    color: grey;
+    padding: 18px 0px 22px 19px;
+  }
+
+  .btn-style{
+    color: grey;
+    background: white;
+    border-radius: 8px;
+    width: 130px;
+    padding: 8px 15px 11px 8px;
+    height: 49px;
+    border: 2px solid #e0e0e0;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+  h1{
+    margin-right: 60rem;
+    margin-top: 2rem;
+    font-style: normal;
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+    color: #5e5a5a;
+  }
+
+  .middle-section-style{
+    width: 99%;
+    height: 130%;
+    background-color: white;
+    
+    justify-content: space-between; 
+    display: flex;
+  
+  }
+  .top-part {
+    flex: 1;
+    height: 108px;
+    padding: 10px;
+    display: inline-flex;
+  }
+
+  .bottom-part {
+    flex: 1;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid  #ccc;
+    padding: 10px;
+    height: 189px;
+  }
+.mat-icon-style{
+    font-size: 91px;
+    width: 137px;
+    height:  86px;
+   
+    color: #686363;
+}
+  .middle-section-left {
+    width: 60%;
+   
+    border-radius: 21px;
+    border: 2px solid #e0e0e0;
+  }
+  .space-divider {
+    width: 98px;
+    background-color: #fff; /* Styling for the divider */
+   
+  }
+  .middle-section-right {
+    width: 20%;
+    flex: 1;
+    border-radius: 21px;
+    border: 2px solid #e0e0e0;
+   
+  }
+
+  h2{
+    margin-top: 27px;
+    color: #5e5a5a;
+  }
+  p{
+    margin-top: 69px;
+    margin-left: -205px;
+    color: #5e5a5a;
+  }
+
+  .vendor-monitor{
+    margin-top: 69px;
+    margin-left: -166px;
+    color: #5e5a5a;
+  }
+
+  #highchart-container{
+    width: 95%;
+    height: 102%;
+  }
+
+  #gauge-chart-container{
+    height: 162px;
+  }
+  .last-part{
+    flex: 1;
+    height: 108px;
+    
+  }
+  .btn-full-report{
+    border: 1px solid grey;
+    margin-left: 48rem !important;
+    margin-top: 1rem !important;
+    width: 125px;
+    height: 53px;
+    border-radius: 10%;
+    color: grey;
+    background: white;
+    padding: 8px 15px 11px 8px;
+    border: 2px solid #e0e0e0;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .btn-upgrade-plan{
+    border: 1px solid grey;
+    margin-left: 20rem !important;
+    margin-top: 1rem !important;
+    width: 137px;
+    height: 53px;
+    border-radius: 10%;
+    color: grey;
+    background: white;
+    padding: 8px 15px 11px 8px;
+    border: 2px solid #e0e0e0;
+    font-family: sans-serif;
+    font-weight: 700;
+  }
+
+  .trend-up{
+    margin-left: 397px;
+    color:green
+  }
