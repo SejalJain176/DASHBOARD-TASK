@@ -1,22 +1,34 @@
-<h2>Table with Select All</h2>
+<h2>Team Members</h2>
 
 
 
-<table>
+<table class="border-raduis-style">
   <thead>
     <tr>
-      <th> <input type="checkbox" [(ngModel)]="selectAll" (change)="toggleSelectAll()" /> Select All</th>
-      <th>Header 1</th>
-      <th>Header 2</th>
-      <th>Header 3</th>
+      <th> <input matInput type="checkbox" [(ngModel)]="selectAll" (change)="toggleSelectAll()" /></th>
+      <th>Name</th>
+      <th>Status
+        <mat-icon>arrow_downward</mat-icon>
+      </th>
+      <th>Role
+        <mat-icon>help</mat-icon>
+      </th>
+      <th>License Use</th>
+      <th>Teams</th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let item of items">
       <td><input type="checkbox" [(ngModel)]="item.selected" /></td>
       <td>{{ item.data1 }}</td>
-      <td>{{ item.data2 }}</td>
+      <td></td>
       <td>{{ item.data3 }}</td>
+      <td>{{ item.data3 }}</td>
+      <td>{{ item.data3 }}</td>
+      <td><mat-icon>delete</mat-icon></td>
+      <td><mat-icon>edit</mat-icon></td>
     </tr>
   </tbody>
 </table>
