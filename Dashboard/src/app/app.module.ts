@@ -13,6 +13,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import * as charts from 'fusioncharts/fusioncharts.charts';
 import * as theme from 'fusioncharts/themes/fusioncharts.theme.fint';
 import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 
 
@@ -31,7 +34,11 @@ import { FormsModule } from '@angular/forms';
     MatIconModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    MatProgressBarModule,
+    MatPaginatorModule
+    
   ],
   providers: [], // Remove the MatIconRegistry provider
   bootstrap: [AppComponent]

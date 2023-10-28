@@ -1,8 +1,6 @@
 table {
-    width: 100%;
+    width: 97%;
     border-collapse: collapse;
-}
-table{
     border-top: 1px solid grey;
     border-left: 1px solid grey;
     border-right: 1px solid grey; 
@@ -18,7 +16,41 @@ th, td {
     color: grey;
     border-color: grey;
     border-radius: 21px;
+    text-align: center;
+
 }
+
+
 .border-radius-style{
     border-radius: 21px !important;
 }
+.circular-image {
+    width: 34px;
+    height: 36px;
+    border-radius: 50%;
+    padding-left: -27px;
+    object-fit: cover;
+    margin-top: 50px;
+  }
+  
+  .status-style{
+    border: 2px solid #e0e0e0;
+    background: #ddf5dd;
+    align-items: center;
+    text-align: center;
+    padding: 13px 13px 13px 13px;
+    border-radius: 47%;
+   
+    border-radius: 25px 25px 25px 25px;
+  }
+  .heading-style{
+    margin-top: 38px;
+  }
+  .bullet-mark{
+    height: 9px;
+    width: 9px;
+    background-color: green;
+    border-radius: 100%;
+    top: 14px;
+    position: relative;
+  }

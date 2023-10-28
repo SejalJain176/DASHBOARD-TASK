@@ -1,4 +1,4 @@
-<h2>Team Members</h2>
+<h2 class="heading-style">Team Members</h2>
 
 
 
@@ -6,29 +6,47 @@
   <thead>
     <tr>
       <th> <input matInput type="checkbox" [(ngModel)]="selectAll" (change)="toggleSelectAll()" /></th>
-      <th>Name</th>
-      <th>Status
-        <mat-icon>arrow_downward</mat-icon>
-      </th>
-      <th>Role
-        <mat-icon>help</mat-icon>
-      </th>
-      <th>License Use</th>
-      <th>Teams</th>
-      <th></th>
-      <th></th>
+      <th *ngFor="let item of this.columnsData">{{item.column_name}}</th>
+      
     </tr>
   </thead>
+  <!-- [(ngModel)]="item.selected" -->
   <tbody>
-    <tr *ngFor="let item of items">
-      <td><input type="checkbox" [(ngModel)]="item.selected" /></td>
-      <td>{{ item.data1 }}</td>
-      <td></td>
-      <td>{{ item.data3 }}</td>
-      <td>{{ item.data3 }}</td>
-      <td>{{ item.data3 }}</td>
-      <td><mat-icon>delete</mat-icon></td>
-      <td><mat-icon>edit</mat-icon></td>
+    <tr *ngFor="let item of itemsToDisplay">
+      <td><input type="checkbox"  [(ngModel)]="item.selected"/></td> 
+      <td style="width: 146px;">
+        <img class="circular-image" src="/assets/facebook-icon.jpeg" alt="Profile Image">
+        {{ item.name.first_name }} {{ item.name.last_name }} 
+        <br >{{item.name.handle}}
+      </td>
+      <td>
+        <div>
+        <div class="status-style">
+           <div class="bullet-mark"></div> 
+          <span>{{item.status}}</span>  
+        </div>
+    </div>
+        
+      </td>
+      <td>{{ item.role}}</td>
+      <td>
+        <mat-progress-bar mode="determinate" [value]="item.license_used"></mat-progress-bar>
+        {{item.license_used}}%
+
+      </td>
+      <td >
+        <span class="status-style"  [ngStyle]="{'background-color': a.background_color , 'color' : a.text_color}" *ngFor="let a of item.teams">
+            {{a.value}}
+        </span>
+       
+      </td>
+      <td><mat-icon (click)="deleteItem(item)">delete</mat-icon></td>
+      <td><mat-icon (click)="editItem(item)">edit</mat-icon></td>
     </tr>
   </tbody>
 </table>
+
+
+
+
+  
