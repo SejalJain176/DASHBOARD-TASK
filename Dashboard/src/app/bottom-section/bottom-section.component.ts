@@ -47,7 +47,7 @@ ngOnInit(){
         
       });
 
-      this.setUpPagination();
+      // this.setUpPagination();
       console.log('API Response:', response);
     },
     (error) => {
@@ -63,35 +63,37 @@ ngOnInit(){
     });
   }
   editItem(item:any){
-    if(item.selected)
+     if(item.selected)
     alert(item.name.first_name)
   }
-
  
   pageSize: number = 10; 
 
-  onPageChange(event: any) {
+  // onPageChange(event: any) {
    
-    const startIndex = event.pageIndex * event.pageSize;
+  //   const startIndex = event.pageIndex * event.pageSize;
     
-    // Update the data to display only items for the current page
-    this.itemsToDisplay = this.items.slice(startIndex, startIndex + event.pageSize);
-  }
+  //   // Update the data to display only items for the current page
+  //   this.itemsToDisplay = this.items.slice(startIndex, startIndex + event.pageSize);
+  // }
+
+
   deleteItem(item: any) {
-   
+   if(item.selected){
     const index = this.items.indexOf(item);
 
     
     if (index !== -1) {
       this.items.splice(index, 1);
-      
-      // You may also want to update your local data structure or API to reflect the removal
-      // Example: this.yourDataService.deleteItem(item.id);
+     
     }
+
+  }
+  
   }
 
-  setUpPagination(){
-    this.pageSize = 10;
-    this.onPageChange({ previousPageIndex: 0,pageIndex:0, pageSize: this.pageSize ,length: this.items.length});
-  }
+  // setUpPagination(){
+  //   this.pageSize = 10;
+  //   this.onPageChange({ previousPageIndex: 0,pageIndex:0, pageSize: this.pageSize ,length: this.items.length});
+  // }
 }
